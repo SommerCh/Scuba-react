@@ -1,27 +1,31 @@
 import React,{Component} from 'react';
 
 
-class Appheader extends Component{
 
+class Appheader extends Component{
+    handleClick() {
+        console.log('Hejsa');
+      }
+     
 render (){
 return(
 
 <div>
 
     <div id="form">
-        <div class="form">
-            <form class="register-form">
+        <div className="form">
+            <form className="register-form">
                 <input type="text" placeholder="Navn" />
                 <input type="password" placeholder="Kodeord" />
                 <input type="text" placeholder="Email" />
                 <button>Opret</button>
-                <p class="message">Har du en konto? <a href="#">Login</a></p>
+                <p className="message">Har du en konto? <a href="#">Login</a></p>
             </form>
-            <form class="login-form">
+            <form className="login-form">
                 <input type="text" placeholder="Brugernavn" />
                 <input type="password" placeholder="Kodeord" />
                 <button>login</button>
-                <p class="message">Har du ikke en konto?<a href="#"> Lav en konto</a></p>
+                <p className="message">Har du ikke en konto?<a href="#"> Lav en konto</a></p>
             </form>
         </div>
     </div>
@@ -30,14 +34,12 @@ return(
         <img id="logo" src="/img/ScubaLiving_logo_small.svg" alt="" />
         <nav>
             <ul>
-
                 <li>HOME</li>
                 <li>DYKKERUDSTYR</li>
-                <li>DYKKERREJSER</li> 
+                <li>DYKKERREJSER</li>
                 <li>DYKKERKURSUS</li>
                 <li>KONTAKT</li>
                 <li>OM OS</li>
-
             </ul>
         </nav>
 
@@ -47,7 +49,7 @@ return(
 
 
         <img id="input2" src="/img/lock-icon-300x300.png" alt="" />
-        <button id="sog2" onclick="vis()">Login</button>
+        <button id="sog2" onClick={this.handleClick}>Login</button>
     </header>
 
 </div>

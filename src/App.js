@@ -19,11 +19,12 @@ return (
 
 <div className="App">
   <Appheader />
-  <Appbox1/>
-  <Appbox2/>
-  <Appbox3/>
-  <Appbox4/>
-  <Appfooter/>
+  <Appbox1 />
+  <Appbox2 />
+  <Appbox3 />
+  <Appbox4 />
+  <Appfooter />
+
 </div>
 );
 }
