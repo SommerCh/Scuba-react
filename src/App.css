@@ -6,7 +6,76 @@
   padding: 0;
   box-sizing: border-box;font-family: "Segoe UI light";
 }
+/* kontakt form */
+form {
+  width: 100%;
+  margin-left: 25%;
+  padding-top: 5%;
+  font-family: 'bad script';
+  color: white;
+}
 
+#formwrap {
+  background-image:url(kontakt/img/vand.gif);background-size: cover
+}
+
+.row {
+  width: 100%;
+}
+
+.col1 {
+  width: 25%;
+  margin-top: 6px;
+  font-size: 25px;
+}
+
+#send {
+  padding: 1% 12% 1% 12%;
+  border: 2px solid black;
+  background-color: rgba(151, 151, 197, 0.753);
+
+  border: solid 2px white;
+  box-shadow: 1px 1px 15px 1px rgb(189, 171, 171);
+  width: 50%;
+  margin: 2% 10% 10% 0%;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+
+#subtext {
+  font-size: 30px
+}
+
+#enavn {
+  height: 40px;
+  width: 50%;
+}
+
+#fnavn {
+  height: 40px;
+  width: 50%
+}
+
+#nummer {
+  height: 40px;
+  width: 50%
+}
+
+#email {
+  height: 40px;
+  width: 50%
+}
+
+#besked {
+  width: 50%;
+  height: 100px;
+}
+
+
+
+
+/* form login */
 #form {
   display: none
 }
@@ -161,8 +230,9 @@ a {
   width: 70px;
   height: 25px;
   color: black;
-  padding: 5px;
-  margin-top: 25px
+  padding: 2px 5px 5px 5px;
+  margin-top: 24px;
+  
 }
 
 #input {

@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import {Link} from 'react-router-dom'
 
 
 class Appheader extends Component{
@@ -19,13 +19,13 @@ return(
                 <input type="password" placeholder="Kodeord" />
                 <input type="text" placeholder="Email" />
                 <button>Opret</button>
-                <p className="message">Har du en konto? <a href="#">Login</a></p>
+                <p className="message">Har du en konto? <p>Login</p></p>
             </form>
             <form className="login-form">
                 <input type="text" placeholder="Brugernavn" />
                 <input type="password" placeholder="Kodeord" />
                 <button>login</button>
-                <p className="message">Har du ikke en konto?<a href="#"> Lav en konto</a></p>
+                <p className="message">Har du ikke en konto?<p> Lav en konto</p></p>
             </form>
         </div>
     </div>
@@ -34,12 +34,12 @@ return(
         <img id="logo" src="/img/ScubaLiving_logo_small.svg" alt="" />
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>DYKKERUDSTYR</li>
-                <li>DYKKERREJSER</li>
-                <li>DYKKERKURSUS</li>
-                <li>KONTAKT</li>
-                <li>OM OS</li>
+                <li> <Link to="/Home">HOME </Link></li>
+                <li> <Link to="/Dykkerudstyr">DYKKERUDSTYR </Link> </li>
+                <li> <Link to="/Dykkerrejser">DYKKERREJSER </Link> </li>
+                <li> <Link to="/Dykkerkursus">DYKKERKURSUS </Link> </li>
+                <li> <Link to="/Kontakt">KONTAKT </Link> </li>
+                <li> <Link to="/Om-os">OM OS </Link> </li>
             </ul>
         </nav>
 

@@ -1,31 +1,34 @@
-import React,
-{
-Component
-}
-
-from 'react';
+import React,{Component} from 'react';
 import Appheader from './app-header'
-import Appbox1 from './appbox1'
-import Appbox2 from './appbox2'
-import Appbox3 from './appbox3'
-import Appbox4 from './appbox4'
+import AppHome from './apphome/app-home'
 import Appfooter from './appfooter'
 import './App.css';
+import {BrowserRouter,Route} from 'react-router-dom'
+import ShopSite from './shop/shop';
+import Travel from './travel/travel';
+import Learn from './learn/learn';
+import Kontakt from './kontakt/kontakt';
 
 class App extends Component {
 
 render() {
 return (
+<BrowserRouter>
+  <div className="App">
 
-<div className="App">
-  <Appheader />
-  <Appbox1 />
-  <Appbox2 />
-  <Appbox3 />
-  <Appbox4 />
-  <Appfooter />
+    <Appheader />
 
-</div>
+    <Route exact path="/" component={AppHome} />
+    <Route path="/Home" component={AppHome} />
+    <Route path="/Dykkerudstyr" component={ShopSite} />
+    <Route path="/Dykkerrejser" component={Travel} />
+    <Route path="/Dykkerkursus" component={Learn} />
+    <Route path="/Kontakt" component={Kontakt} />
+    <Route path="/Om-os" component={ShopSite} />
+    <Appfooter />
+
+  </div>
+</BrowserRouter>
 );
 }
 }
